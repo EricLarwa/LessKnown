@@ -5,9 +5,9 @@ import {
 import { useState } from 'react';
 import { Stack, useRouter } from 'expo-router';
 import { CustomHeaderLeftButton, CustomHeaderRightButton } from './components/Headers'
+import { Welcome } from './components/Welcome'
 
-
-const HomeScreen = ({ navigation }) => {
+const HomeScreen = () => {
 
     return (
         < SafeAreaView style={{ flex: 1, backgroundColor: "#FAFAFC" }} />
@@ -29,6 +29,12 @@ const Home = () => {
                     headerTitle: ""
                 }}
             />
+
+            <ScrollView>
+                <View style={{flex: 1,padding: 12}}>
+                    < Welcome />
+                </View>
+            </ScrollView>
         </SafeAreaView>
 
 
