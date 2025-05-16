@@ -5,13 +5,12 @@ const styles = StyleSheet.create({
         width: "100%"
     },
     userName: {
-        fontFamily: "Poppins-Medium",
-        fontWeight: 50,
+        fontWeight: 300,
         fontSize: 26,
         color: "#312649"
     },
     welcomeMessage: {
-        fontFamily: "Poppins-Medium",
+        fontWeight: 500,
         fontSize: 28,
         color: "#312651",
         marginTop: 2,
@@ -20,6 +19,12 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "row",
+        backgroundColor: "#F3F4F8",
+        borderRadius: 16,
+        shadowColor: "#000",
+        width: "100%",
+        shadowOpacity: 0.1,
+        shadowRadius: 6,
         marginTop: 28,
         height: 50,
     },
@@ -33,10 +38,16 @@ const styles = StyleSheet.create({
         height: "100%",
     },
     searchInput: {
-        fontFamily: "Poppins-Medium",
+        flex:1,
+        fontSize: 16,
+        color: "#333",
         width: "100%",
         height: "100%",
         paddingHorizontal: 16,
+        borderRadius: 16,
+        shadowColor: "#000",
+        shadowOpacity: 0.1,
+        shadowRadius: 6,
     },
     searchBtn: {
         width: 50,
@@ -63,7 +74,6 @@ const styles = StyleSheet.create({
         borderColor: activeLocationType === item ? "#444262" : "#C1C0C8",
     }),
     tabText: (activeLocationType, item) => ({
-        fontFamily: "Poppins-Medium",
         color: activeLocationType === item ? "#444262" : "#C1C0C8",
       }),
 });
